@@ -22,3 +22,72 @@ a {
 
 ::-webkit-scrollbar-track {
 }
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #010001;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+}
+
+header .links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header .links li {
+}
+
+header .links li a {
+  color: #fff;
+  padding: 0 30px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+header .links li a:hover {
+}
+
+main {
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+main .container {
+}
+
+main .header-text {
+}
+
+main .header-text h1 {
+}
+
+main .header-text p {
+}
+
+main {
+}
+
+main {
+}
+
+main {
+}
+
+main {
+}
