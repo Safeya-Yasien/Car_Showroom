@@ -19,13 +19,16 @@ a {
 
 ::-webkit-scrollbar {
   scroll-behavior: smooth;
-  scrollbar-width: ;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar {
+  width: 10px;
 }
-
 ::-webkit-scrollbar-track {
+  background-color: #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f9ae37;
 }
 
 .container {
@@ -53,26 +56,68 @@ a {
 
 header {
   background-color: #010001;
+  margin-top: 3px;
+  box-shadow: 2px -2px 10px 2px #f9ae37;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 250;
 }
 
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
+
+}
 header .logo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-
+header .container .toggle-menu {
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+}
+header .container .toggle-menu:hover + .links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f9ae37;
+  opacity: 0.8;
+}
+header .container .toggle-menu:hover + .links li a {
+color: white;
+display: flex;
+justify-content: center;
+padding-top: 10px;
+padding-bottom: 10px;
+transition: 0.3s;
+}
+@media (min-width: 768px) {
+header .container .toggle-menu {
+  display: none;
+}  
+}
+@media (max-width: 767px) {
+header .container  .links {
+  display: none;
+}
+header .container .toggle-menu + .links li a:hover {
+  padding-left: 5px;
+}
+}
 header .links {
   display: flex;
   margin: 0;
   padding: 0;
 }
-
 header .links li a {
   color: #fff;
   padding: 0 30px;
@@ -86,32 +131,49 @@ header .links li a:hover {
 }
 
 main {
-  /* background-image: url("../images/landing.jpg");
+  background-image: url("../images/landing.jpg");
   background-size: cover;
   position: relative;
-  min-height: 100vh; */
+  min-height: 100vh;
 }
 
 main .container {
 }
+main .find-car {
+  position: absolute;
+  top: 20%;
+}
+main .find-car input {
+  padding: 10px 20px;
+  outline: none;
+  border: 2px solid #ccc;
+  transition: 0.3s;
+  caret-color: #f9ae37;
+}
+main .find-car input:focus {
+  border: 2px solid #f9ae37;
 
+}
+main .find-car button {
+  padding: 5px;
+  transition: 0.3s;
+}
+main .find-car button:hover {
+  background-color: #f9ae37;
+  color: white;
+}
 main .header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
-
 main .header-text h1 {
+  color: white;
+  font-size: 40px;
 }
-
 main .header-text p {
-}
-
-main {
-}
-
-main {
-}
-
-main {
-}
-
-main {
+  color: white;
+  text-align: center;
+  font-size: 25px;
 }
