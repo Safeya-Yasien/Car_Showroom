@@ -69,19 +69,19 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
 }
 header .logo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
+
 header .container .toggle-menu {
   color: #fff;
   font-size: 30px;
   position: relative;
 }
+
 header .container .toggle-menu:hover + .links {
   position: absolute;
   display: flex;
@@ -89,29 +89,29 @@ header .container .toggle-menu:hover + .links {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #f9ae37;
-  opacity: 0.8;
+  background-color: rgba(189, 124, 15, 0.8);
 }
+
 header .container .toggle-menu:hover + .links li a {
-color: white;
-display: flex;
-justify-content: center;
-padding-top: 10px;
-padding-bottom: 10px;
-transition: 0.3s;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.3s;
 }
 @media (min-width: 768px) {
-header .container .toggle-menu {
-  display: none;
-}  
+  header .container .toggle-menu {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
-header .container  .links {
-  display: none;
-}
-header .container .toggle-menu + .links li a:hover {
-  padding-left: 5px;
-}
+  header .container .links {
+    display: none;
+  }
+  header .container .toggle-menu + .links li a:hover {
+    padding-left: 5px;
+  }
 }
 header .links {
   display: flex;
@@ -152,7 +152,6 @@ main .find-car input {
 }
 main .find-car input:focus {
   border: 2px solid #f9ae37;
-
 }
 main .find-car button {
   padding: 5px;
@@ -166,7 +165,7 @@ main .header-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 main .header-text h1 {
   color: white;
