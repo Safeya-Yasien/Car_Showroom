@@ -157,9 +157,6 @@ main::before {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-main .container {
-}
-
 main .header-text {
   position: absolute;
   top: 50%;
@@ -368,13 +365,4 @@ main .find-car select:focus {
 
 .products .box .car-info {
   color: #aaa;
-}
-
-.products .box:hover {
-}
-
-.products .box {
-}
-
-.products .box {
 }
