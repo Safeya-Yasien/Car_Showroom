@@ -242,6 +242,7 @@ main .find-car select:focus {
   position: relative;
   overflow: hidden;
   transition: 0.3s;
+  padding: 5px;
 }
 
 .products .box::after {
@@ -313,8 +314,29 @@ main .find-car select:focus {
   border-radius: 50%;
   display: block;
   position: absolute;
-  top: 0;
-  left: -17px;
+  top: 5px;
+  left: -10px;
+  z-index: 5;
+}
+
+.products .box .car-name .honda {
+  border-radius: 0;
+  top: 12px;
+  left: 2px;
+}
+
+.products .box .car-name .tesla {
+  top: 11px;
+  left: -3px;
+}
+
+.products .box .car-name .jeep {
+  top: 7px;
+  left: 8px;
+}
+
+.products .box .car-name .mercedes {
+  left: -8px;
 }
 
 .products .box .car-name h4 {
