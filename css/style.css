@@ -225,3 +225,84 @@ main .find-car select {
 main .find-car select:focus {
   outline: none;
 }
+
+/* start products page */
+.products {
+  padding-top: 120px;
+}
+
+.products .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.products .box {
+  background-color: #010001;
+  position: relative;
+}
+
+.products .box .image img {
+  max-width: 100%;
+}
+
+.products .box .info {
+  padding: 20px;
+}
+
+.products .box .car-name {
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products .box .car-name .logo {
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -17px;
+}
+
+.products .box .car-name h4 {
+  font-size: 18px;
+}
+
+.products .box .car-name p {
+  color: var(--main-color);
+}
+
+.products .box .car-info {
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 20px;
+  border-top: 1px solid #aaa;
+  padding-top: 20px;
+}
+
+.products .box .car-info ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.products .box .car-info ul li i {
+  margin-right: 5px;
+}
+
+.products .box .car-info {
+  color: #aaa;
+}
+
+.products .box:hover {
+}
+
+.products .box {
+}
+
+.products .box {
+}
