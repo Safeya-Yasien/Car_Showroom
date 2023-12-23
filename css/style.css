@@ -226,22 +226,26 @@ main .find-car select:focus {
 /* Start about */
 
 .about .container {
-  margin-top: 50px;
+  padding-top: 120px;
 }
+
 .about .container h2 {
   text-align: center;
   color: var(--main-color);
   font-size: 60px;
 }
+
 .about .container .content-choose {
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
 }
+
 .about .container .content-choose .box {
   width: 40%;
   /* position: relative; */
 }
+
 @media (max-width: 960px) {
   .about .container .content-choose .box {
     text-align: center;
@@ -253,6 +257,7 @@ main .find-car select:focus {
     margin-top: 100px;
   }
 }
+
 .about .container .content-choose .box h3 {
   font-size: 40px;
   margin: 0;
@@ -310,6 +315,7 @@ main .find-car select:focus {
 /* start products page */
 .products {
   padding-top: 120px;
+  padding-bottom: 50px;
 }
 
 .products .container {
@@ -450,3 +456,81 @@ main .find-car select:focus {
 .products .box .car-info {
   color: #aaa;
 }
+
+/* start services */
+.services {
+  padding-top: 120px;
+}
+
+.services .container {
+}
+
+.services .section-1 {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .services .section-1 {
+    flex-direction: column;
+  }
+}
+
+.services .section-1 .image {
+}
+
+.services .section-1 .image img {
+  width: 500px;
+}
+
+@media (max-width: 767px) {
+  .services .section-1 .image img {
+    width: 100%;
+  }
+}
+
+.services .section-1 .text {
+  width: 400px;
+}
+
+@media (max-width: 767px) {
+  .services .section-1 .text {
+    text-align: center;
+  }
+}
+
+.services .section-1 .text h4 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.services .section-1 .text p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.services .section-1 {
+}
+
+.services .section-1 {
+}
+
+.services .container {
+}
+
+.services .container {
+}
+
+.services .container {
+}
+
+.services .container {
+}
+
+.services .container {
+}
+
+.services .container {
+}
+
+/* end services */
