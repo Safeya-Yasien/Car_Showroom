@@ -11,7 +11,6 @@ We extend our sincere appreciation to:<br>
 [Abdulrahman Badawy: https://github.com/abdoBadawy74]
 <br>
 [Ahmed Mohamed: https://github.com/Ahmed-keshtaa]
-
 <br>
 
 ## Contributors:<br>
