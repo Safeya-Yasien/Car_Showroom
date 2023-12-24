@@ -8,6 +8,7 @@
 :root {
   --main-color: #f9ae37;
   --white-color: #fff;
+  --black-color: #010001;
 }
 
 body {
@@ -60,7 +61,7 @@ a {
 }
 
 header {
-  background-color: #010001;
+  background-color: var(--black-color);
   margin-top: 3px;
   box-shadow: 2px -2px 10px 2px var(--main-color);
   position: fixed;
@@ -325,7 +326,7 @@ main .find-car select:focus {
 }
 
 .products .box {
-  background-color: #010001;
+  background-color: var(--black-color);
   position: relative;
   overflow: hidden;
   padding: 5px;
@@ -462,21 +463,16 @@ main .find-car select:focus {
   padding-top: 120px;
 }
 
-.services .container {
-}
-
-.services .section-1 {
+.services .section-1 .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 767px) {
-  .services .section-1 {
+  .services .section-1 .container {
     flex-direction: column;
   }
-}
-
-.services .section-1 .image {
 }
 
 .services .section-1 .image img {
@@ -496,12 +492,13 @@ main .find-car select:focus {
 @media (max-width: 767px) {
   .services .section-1 .text {
     text-align: center;
+    margin-top: 20px;
   }
 }
 
 .services .section-1 .text h4 {
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .services .section-1 .text p {
@@ -509,28 +506,97 @@ main .find-car select:focus {
   font-size: 14px;
 }
 
-.services .section-1 {
+.services .section-2 {
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  margin-bottom: 50px;
+  background-color: #eee;
 }
 
-.services .section-1 {
+.services .section-2 h4 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.services .container {
+.services .section-2 .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
 }
 
-.services .container {
+.services .section-2 .box {
+  border: 1px solid #aaa;
+  position: relative;
+  text-align: center;
+  transition: 0.4s;
 }
 
-.services .container {
+.services .section-2 .box::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  font-weight: 600;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--main-color);
+  transition: 0.4s;
 }
 
-.services .container {
+.services .section-2 .box:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
+  transform: translateY(10px);
 }
 
-.services .container {
+.services .section-2 .box:hover::after {
+  opacity: 1;
+  visibility: visible;
+  left: 45%;
 }
 
-.services .container {
+.services .section-2 .icon {
+  background-color: var(--black-color);
+  padding: 30px 0;
+  transition: 0.3s;
+}
+
+.services .section-2 .box:hover .icon {
+  background-color: transparent;
+}
+
+.services .section-2 .icon i {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.services .section-2 .box:hover .icon i {
+  color: black;
+}
+
+.services .section-2 .text {
+  padding: 35px 60px;
+}
+
+.services .section-2 .text p:first-child {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.services .container .text p:last-child {
+  font-size: 14px;
+  color: #aaa;
 }
 
 /* end services */
