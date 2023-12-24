@@ -62,7 +62,7 @@ a {
 
 header {
   background-color: var(--black-color);
-  margin-top: 3px;
+  border-top: 1px solid var(--main-color);
   box-shadow: 2px -2px 10px 2px var(--main-color);
   position: fixed;
   top: 0;
@@ -493,6 +493,7 @@ main .find-car select:focus {
   .services .section-1 .text {
     text-align: center;
     margin-top: 20px;
+    width: 350px;
   }
 }
 
@@ -512,12 +513,45 @@ main .find-car select:focus {
   padding-bottom: 60px;
   margin-bottom: 50px;
   background-color: #eee;
+  position: relative;
+}
+
+.services .section-2 .title {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 150px;
+  color: #fff;
+  text-wrap: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 767px) {
+  .services .section-2 .title {
+    font-size: 80px;
+  }
 }
 
 .services .section-2 h4 {
-  font-size: 35px;
+  position: relative;
+  transform: translateX(-50%) translateY(70%);
+  font-size: 42px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  left: 50%;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .services .section-2 h4 {
+    transform: translateX(-50%) translateY(-25%);
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
 }
 
 .services .section-2 .container {
