@@ -7,7 +7,7 @@ A comprehensive car showroom management system that allows for efficient invento
 
 ## Supervisor
 
-We extend my sincere appreciation to:<br>
+We extend our sincere appreciation to:<br>
 [Abdulrahman Badawy: https://github.com/abdoBadawy74]
 <br>
 [Ahmed Mohamed: https://github.com/Ahmed-keshtaa]
