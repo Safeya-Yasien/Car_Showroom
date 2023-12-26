@@ -5,7 +5,7 @@
 A comprehensive car showroom management system that allows for efficient inventory management, customer interaction, and sales tracking.
 <br>
 
-## Supervisor
+## Supervisors
 
 We extend our sincere appreciation to:<br>
 [Abdulrahman Badawy: https://github.com/abdoBadawy74]
