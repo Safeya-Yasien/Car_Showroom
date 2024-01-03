@@ -7,6 +7,7 @@
 
 :root {
   --main-color: #f9ae37;
+  --second-color: #aaa;
   --white-color: #fff;
   --black-color: #010001;
 }
@@ -99,7 +100,7 @@ header .container .toggle-menu:hover + .links {
 }
 
 header .container .toggle-menu:hover + .links li a {
-  color: white;
+  color: var(--white-color);
   display: flex;
   justify-content: center;
   padding-top: 10px;
@@ -175,7 +176,7 @@ main .header-text p {
   text-align: center;
   font-size: 20px;
   margin-top: 10px;
-  color: #aaa;
+  color: var(--second-color);
 }
 
 main .find-car {
@@ -436,10 +437,10 @@ main .find-car select:focus {
 }
 
 .products .box .car-info {
-  color: #aaa;
+  color: var(--second-color);
   font-size: 14px;
   margin-top: 20px;
-  border-top: 1px solid #aaa;
+  border-top: 1px solid var(--second-color);
   padding-top: 20px;
 }
 
@@ -455,8 +456,121 @@ main .find-car select:focus {
 }
 
 .products .box .car-info {
-  color: #aaa;
+  color: var(--second-color);
 }
+
+/* start booking */
+.booking {
+  padding-top: 120px;
+}
+
+.booking form {
+  width: calc(100% - 30rem);
+  margin: 0 auto;
+  padding: 30px 30px 40px;
+  background-color: var(--black-color);
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .booking form {
+    width: calc(100% - 2rem);
+  }
+}
+
+.booking form h5 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: var(--main-color);
+}
+.booking form p {
+  width: calc(100% - 10rem);
+  line-height: 1.6;
+  font-size: 14px;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .booking form p {
+    width: calc(100% - 0rem);
+  }
+}
+
+.booking form .person-info {
+  margin-bottom: 40px;
+}
+
+.booking form .person-info input {
+  border: none;
+  font-size: 14px;
+  padding: 10px 5px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--second-color);
+  outline: none;
+  caret-color: var(--main-color);
+}
+
+.booking form .person-info .person-name {
+  margin-bottom: 20px;
+}
+
+.booking form .person-info .person-name input {
+  width: 100%;
+}
+
+.booking form .person-info .person-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking form .person-info .person-contact div {
+  flex: 1;
+}
+
+.booking form .person-info .person-contact div:last-child {
+  padding: 0px 0px 0px 40px;
+}
+
+.booking form .person-info .person-contact input {
+  width: 100%;
+}
+
+.booking form .car-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.booking form .car-info {
+  margin-bottom: 30px;
+}
+
+.booking form .car-info select {
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  color: var(--black-color);
+  background-color: var(--second-color);
+  padding: 0px 5px;
+}
+
+.booking form .confirm button {
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking form .confirm button:hover {
+  background-color: var(--main-color);
+}
+
+/* end booking */
 
 /* start services */
 .services {
@@ -560,7 +674,7 @@ main .find-car select:focus {
 }
 
 .services .section-2 .box {
-  border: 1px solid #aaa;
+  border: 1px solid var(--second-color);
   position: relative;
   text-align: center;
   transition: 0.4s;
@@ -576,7 +690,7 @@ main .find-car select:focus {
   text-align: center;
   width: 30px;
   height: 30px;
-  color: #fff;
+  color: var(--white-color);
   line-height: 30px;
   opacity: 0;
   visibility: hidden;
@@ -629,7 +743,7 @@ main .find-car select:focus {
 
 .services .container .text p:last-child {
   font-size: 14px;
-  color: #aaa;
+  color: var(--second-color);
 }
 
 /* end services */
