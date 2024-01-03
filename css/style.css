@@ -466,6 +466,7 @@ main .find-car select:focus {
 
 .booking form {
   width: calc(100% - 30rem);
+  max-width: 500px;
   margin: 0 auto;
   padding: 30px 30px 40px;
   background-color: var(--black-color);
