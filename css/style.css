@@ -127,7 +127,7 @@ header .links {
 }
 header .links li a {
   color: var(--white-color);
-  padding-right: 30px;
+  padding-right: 10px;
   transition: 0.3s;
   display: flex;
   align-items: center;
