@@ -906,6 +906,7 @@ main .find-car select:focus {
 .teams {
   padding-top: 40px;
   padding-bottom: 120px;
+  height: 100vh;
 }
 
 .teams .container {
