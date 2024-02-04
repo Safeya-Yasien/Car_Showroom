@@ -60,6 +60,11 @@ a {
     width: 1170px;
   }
 }
+
+.page {
+  position: relative;
+}
+
 /* Start Header */
 header {
   background-color: var(--black-color);
@@ -217,13 +222,17 @@ main .find-car select:focus {
 }
 /* End Landing */
 
-
 /* Start About */
+
+.about {
+  padding-bottom: 120px;
+}
+
 .about .container {
   padding-top: 120px;
 }
 .about .container .imgback {
-  margin-top: 10px;  
+  margin-top: 10px;
   background-image: url("../images/about2.jpg");
   background-size: cover;
   /* width: 100%; */
@@ -237,13 +246,13 @@ main .find-car select:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 .about .container .imgback div {
   position: absolute;
   top: 75%;
   left: 50%;
-  transform: translate(-75%,-50%);
+  transform: translate(-75%, -50%);
   display: grid;
   /* margin-top: 60px; */
   color: white;
@@ -251,7 +260,6 @@ main .find-car select:focus {
 }
 .about .container .imgback div ul .act {
   /* position: absolute; */
-
 }
 .about .container .content-choose {
   display: flex;
@@ -271,7 +279,7 @@ main .find-car select:focus {
 }
 @media (max-width: 767px) {
   .about .container .content-choose .box {
-    width: 80% ;
+    width: 80%;
   }
 }
 @media (max-width: 960px) {
@@ -334,13 +342,13 @@ main .find-car select:focus {
 .about .container .content {
   margin-bottom: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px 0;
-  background-color: black
+  background-color: black;
 }
 .about .container .content .box {
-text-align: center;
+  text-align: center;
 }
 .about .container .content .box h3 {
   font-size: 50px;
@@ -354,7 +362,7 @@ text-align: center;
 /* start products */
 .products {
   padding-top: 120px;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
 }
 
 .products .container {
@@ -616,6 +624,7 @@ text-align: center;
 /* start services */
 .services {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .services .section-1 .container {
@@ -789,60 +798,54 @@ text-align: center;
 
 /* end services */
 /* Start Team */
-.teams .container  {
-  padding-top: 120px;
 
+.teams {
+  padding-top: 40px;
+  padding-bottom: 120px;
 }
+
+.teams .container {
+  padding-top: 120px;
+}
+
 .teams .container h2 {
   text-align: center;
   color: var(--main-color);
   font-size: 50px;
   font-weight: bold;
 }
-.teams .container .team  {
+.teams .container .team {
   display: flex;
   justify-content: space-around;
   gap: 20px;
   padding: 50px 0 50px 0;
 }
+
 @media (max-width: 767px) {
-  .teams .container .team  {
+  .teams .container .team {
     flex-direction: column;
     margin-bottom: 20px;
   }
 }
-.teams .container .team .box  {
+
+.teams .container .team .box {
   background-color: var(--black-color);
   padding: 20px;
   text-align: center;
   position: relative;
-
 }
-.teams .container .team .box:hover .overlay {
-  width: 100%;
 
-
-}
-.teams .overlay {
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  left: 0;
-  top: 0;
-  background-color: rgb(249 174 55 / 70%);
-  transition: 0.5s;
-
-}
-.teams .container .team .box img  {
+.teams .container .team .box img {
   width: 250px;
-  max-width: 100%; 
+  max-width: 100%;
   height: 250px;
 }
-.teams .container .team .box h3  {
+
+.teams .container .team .box h3 {
   color: var(--main-color);
-  padding:  5px 0;
+  padding: 5px 0;
 }
-.teams .container .team .box p  {
+.teams .container .team .box p {
   color: var(--second-color);
 }
 /* End Team */
@@ -853,7 +856,7 @@ footer {
   color: var(--white-color);
   padding: 20px;
   text-align: center;
-  position: static;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
