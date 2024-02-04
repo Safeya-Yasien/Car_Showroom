@@ -342,7 +342,7 @@ main .find-car select:focus {
 .about .container .content {
   margin-bottom: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px 0;
   background-color: black;
@@ -797,6 +797,110 @@ main .find-car select:focus {
 }
 
 /* end services */
+
+/* start contact */
+.contact {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url("../images/contact-us.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.contact .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.contact .social-contact,
+.contact .contact-form {
+  background: linear-gradient(
+    to right,
+    rgba(204, 137, 38, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+
+  padding: 10px 15px;
+}
+
+.contact .social-contact .contact-info {
+  margin-bottom: 30px;
+}
+
+.contact .social-contact .contact-info h3,
+.contact .contact-form .contact-form-container h3 {
+  color: var(--main-color);
+  font-size: 30px;
+
+  margin-bottom: 15px;
+}
+
+.contact .social-contact .contact-info p {
+  font-size: 14px;
+}
+
+.contact .social-contact .info {
+  background-color: rgb(1 0 1 / 70%);
+  padding: 20px;
+}
+
+.contact .social-contact .info .box {
+  margin-bottom: 10px;
+}
+
+.contact .social-contact .info .box .icon i {
+  font-size: 25px;
+  color: #b7a99a;
+}
+
+.contact .social-contact .info .box .text .title {
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+
+.contact .social-contact .info .box .text .desc {
+  color: var(--second-color);
+  font-size: 16px;
+}
+
+.contact .social-contact .info .box {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.contact .contact-form .contact-form-container h3 {
+  color: var(--black-color);
+}
+
+.contact .contact-form .contact-form-container form input,
+.contact .contact-form .contact-form-container form textarea {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .contact-form .contact-form-container form input:focus,
+.contact .contact-form .contact-form-container form textarea:focus {
+  outline: none;
+}
+
+.contact .contact-form .contact-form-container form textarea {
+  height: 150px;
+}
+
+.contact .contact-form .contact-form-container .row {
+  padding: 0px 15px;
+}
+
+/* end contact */
+
 /* Start Team */
 
 .teams {
