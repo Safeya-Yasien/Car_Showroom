@@ -92,9 +92,16 @@ header .container .toggle-menu {
   color: var(--white-color);
   font-size: 30px;
   position: relative;
+  cursor: pointer;
 }
 
-header .container .toggle-menu:hover + .links {
+@media (min-width: 768px) {
+  header .container .toggle-menu {
+    display: none;
+  }
+}
+
+header .container .links.show-menu {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -104,7 +111,7 @@ header .container .toggle-menu:hover + .links {
   background-color: rgba(189, 124, 15, 0.8);
 }
 
-header .container .toggle-menu:hover + .links li a {
+header .container .links.show-menu li a {
   color: var(--white-color);
   display: flex;
   justify-content: center;
@@ -113,19 +120,15 @@ header .container .toggle-menu:hover + .links li a {
   transition: 0.3s;
 }
 
-@media (min-width: 768px) {
-  header .container .toggle-menu {
-    display: none;
-  }
-}
 @media (max-width: 767px) {
   header .container .links {
     display: none;
   }
-  header .container .toggle-menu + .links li a:hover {
+  header .container .links.show-menu li a:hover {
     padding-left: 5px;
   }
 }
+
 header .links {
   display: flex;
   margin: 0;
@@ -801,17 +804,30 @@ main .find-car select:focus {
 /* start contact */
 .contact {
   padding-top: 120px;
-  padding-bottom: 120px;
   background-image: url("../images/contact-us.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
+@media (max-width: 767px) {
+  .contact {
+    height: auto;
+    padding-bottom: 120px;
+  }
+}
+
 .contact .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 40px;
+}
+
+@media (max-width: 767px) {
+  .contact .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 .contact .social-contact,
@@ -912,7 +928,6 @@ main .find-car select:focus {
 .teams {
   padding-top: 40px;
   padding-bottom: 120px;
-  height: 100vh;
 }
 
 .teams .container {
