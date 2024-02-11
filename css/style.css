@@ -985,7 +985,7 @@ main .find-car select:focus {
 /* Start Reviews */
 .review .container {
   padding-top: 120px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
 }
 .review .container h2 {
   text-align: center;
