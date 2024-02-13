@@ -983,6 +983,21 @@ main .find-car select:focus {
 }
 /* End Team */
 /* Start Reviews */
+
+@media (max-width: 768px) {
+  .review {
+    height: auto;
+  }
+}
+
+
+@media (min-width: 1199px) {
+  .review {
+    height: 100vh;
+  }
+}
+
+
 .review .container {
   padding-top: 150px;
   padding-bottom: 100px;
@@ -996,7 +1011,7 @@ main .find-car select:focus {
 .review .container .content-review {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   text-align: center;
 }
@@ -1018,6 +1033,11 @@ main .find-car select:focus {
   transform: translateY(-20px);
   color: var(--white-color);
 }
+
+.review .container .content-review .box:hover .icons i {
+  cursor: pointer;
+}
+
 .review .container .content-review .box img {
   width: 100px;
   max-width: 100%;
@@ -1035,16 +1055,12 @@ main .find-car select:focus {
 .review .container .content-review .box .stars {
   transition: 0.5s;
   color: var(--main-color);
-
-
 }
 .review .container .content-review .box .stars i {
   color: var(--main-color);
-
 }
 .review .container .content-review .box .icons {
   transition: 0.5s;
-
 }
 .review .container .content-review .box p {
   color: var(--second-color);
