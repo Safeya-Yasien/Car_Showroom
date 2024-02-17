@@ -508,26 +508,21 @@ main .find-car select:focus {
 }
 /* End products */
 /* start booking */
-.booking {
-  padding-top: 120px;
-  padding-bottom: 10px;
+
+@media (max-width: 767px) {
+  .booking {
+    width: 330px;
+  }
 }
 
 .booking form {
-  width: calc(100% - 30rem);
-  max-width: 500px;
   margin: 0 auto;
   padding: 30px 30px 40px;
   background-color: var(--black-color);
   border-radius: 10px;
 }
 
-@media (max-width: 767px) {
-  .booking form {
-    width: calc(100% - 2rem);
-  }
-}
-.bookk {
+.book {
   color: var(--main-color);
 }
 .booking form h5 {
@@ -536,17 +531,10 @@ main .find-car select:focus {
   color: var(--main-color);
 }
 .booking form p {
-  width: calc(100% - 10rem);
   line-height: 1.6;
   font-size: 14px;
   color: var(--white-color);
   margin-bottom: 20px;
-}
-
-@media (max-width: 767px) {
-  .booking form p {
-    width: calc(100% - 0rem);
-  }
 }
 
 .booking form .person-info {
@@ -567,6 +555,12 @@ main .find-car select:focus {
   margin-bottom: 20px;
 }
 
+@media (max-width: 767px) {
+  .booking form .person-info .person-name {
+    margin-bottom: 0;
+  }
+}
+
 .booking form .person-info .person-name input {
   width: 100%;
 }
@@ -577,12 +571,24 @@ main .find-car select:focus {
   justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  .booking form .person-info .person-contact {
+    display: block;
+  }
+}
+
 .booking form .person-info .person-contact div {
   flex: 1;
 }
 
 .booking form .person-info .person-contact div:last-child {
   padding: 0px 0px 0px 40px;
+}
+
+@media (max-width: 767px) {
+  .booking form .person-info .person-contact div:last-child {
+    padding: 0;
+  }
 }
 
 .booking form .person-info .person-contact input {
@@ -592,10 +598,8 @@ main .find-car select:focus {
 .booking form .car-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
-}
-
-.booking form .car-info {
   margin-bottom: 30px;
 }
 
@@ -609,6 +613,12 @@ main .find-car select:focus {
   padding: 0px 5px;
 }
 
+@media (max-width: 767px) {
+  .booking form .car-info select {
+    width: auto;
+  }
+}
+
 .booking form .confirm button {
   padding: 5px 10px;
   width: 100%;
@@ -620,6 +630,45 @@ main .find-car select:focus {
 
 .booking form .confirm button:hover {
   background-color: var(--main-color);
+}
+
+/* popup */
+
+.popup-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+}
+
+.popup-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+  padding: 20px;
+  background-color: var(--text-color);
+  border: 1px solid var(--white-color);
+}
+
+.close-button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: var(--black-color);
+  font-weight: bold;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 /* end booking */
@@ -990,13 +1039,11 @@ main .find-car select:focus {
   }
 }
 
-
 @media (min-width: 1199px) {
   .review {
     height: 100vh;
   }
 }
-
 
 .review .container {
   padding-top: 150px;
