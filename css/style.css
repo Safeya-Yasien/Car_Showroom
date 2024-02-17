@@ -257,13 +257,24 @@ main .find-car select:focus {
   left: 50%;
   transform: translate(-75%, -50%);
   display: grid;
-  /* margin-top: 60px; */
   color: white;
   text-align: center;
+  margin-top: 5px;
 }
-.about .container .imgback div ul .act {
-  /* position: absolute; */
+
+.about .imgback ul {
+  padding: 0;
 }
+
+.about .imgback li > a {
+  color: var(--main-color);
+}
+
+.about .imgback .act {
+  margin: 5px 0px;
+  animation: go-down 0.5s linear infinite;
+}
+
 .about .container .content-choose {
   display: flex;
   justify-content: space-between;
@@ -859,7 +870,7 @@ main .find-car select:focus {
   height: 100vh;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .contact {
     height: auto;
     padding-bottom: 120px;
@@ -1134,3 +1145,13 @@ footer {
 }
 
 /* end footer */
+
+@keyframes go-down {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
