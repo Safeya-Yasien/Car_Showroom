@@ -1023,10 +1023,16 @@ main .find-car select:focus {
   height: 250px;
 }
 
-.teams .container .team .box h3 {
-  color: var(--main-color);
-  padding: 5px 0;
+.teams .container .team .box .info {
+  padding-top: 15px;
 }
+
+.teams .container .team .box a {
+  color: var(--main-color);
+  display: block;
+  margin-bottom: 10px;
+}
+
 .teams .container .team .box p {
   color: var(--second-color);
 }
