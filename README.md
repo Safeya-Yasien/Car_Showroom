@@ -15,8 +15,8 @@ We extend our sincere appreciation to:<br>
 
 ## Contributors:<br>
 
-Hoda Khairy [https://github.com/hoda220]<br>
-Safeya Yasien [https://github.com/Safeya-Yasien]<br>
+Hoda Khairy: https://github.com/hoda220<br>
+Safeya Yasien: https://github.com/Safeya-Yasien<br>
 
 ## Live Demo:
 
